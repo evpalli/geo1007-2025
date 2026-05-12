@@ -169,7 +169,6 @@ function registerWFSReadAndWriteLayer(mapInstance, toc) {
   }
   return performInsert; // return function reference to be able to insert data
 }
-let insertWFS = registerWFSReadAndWriteLayer(map, toc);
 
 function registerPopUpForInsert(mapInstance) {
   var popup = L.popup();
@@ -203,4 +202,7 @@ function registerPopUpForInsert(mapInstance) {
 
   mapInstance.on("click", onMapClick);
 }
+registerPopUpForInsert(map);
+
+let insertWFS = registerWFSReadAndWriteLayer(map, toc);
 registerPopUpForInsert(map);

@@ -202,7 +202,6 @@ function registerPopUpForInsert(mapInstance) {
 
   mapInstance.on("click", onMapClick);
 }
-registerPopUpForInsert(map);
 
 let insertWFS = registerWFSReadAndWriteLayer(map, toc);
 registerPopUpForInsert(map);
